@@ -8,7 +8,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Главная страница</title>
 		<meta name="viewport" content="width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic" media="screen, projection, print">
+		<link rel="stylesheet" type="text/css" href="css/_vendors/slick.css" media="screen, projection, print">
 		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection, print">
 	</head>
 	<body>
@@ -17,15 +19,207 @@
 		<![endif]-->
 		<div class="wrapper">
 			<div class="maincontent">
-				<div class="div">start</div>
+				<header class="header">
+					<div class="container"><a href="#" class="header__logo-link">
+							<div class="header__logo">
+								<div class="logo"><img src="img/svg/logo.svg" class="logo__img"></div>
+							</div>
+							<div class="header__title">
+								<div class="header__title-top">Adventure</div>
+								<div class="header__title-bottom"> Оставь свой след, где его еще нет...</div>
+							</div></a></div>
+				</header>
+				<main class="main">
+					<nav class="nav">
+						<div class="container">
+							<ul class="nav__list">
+								<li class="nav__item active"><a href="#" class="nav__link">Все страны</a></li>
+								<li class="nav__item "><a href="#" class="nav__link">Культура</a></li>
+								<li class="nav__item "><a href="#" class="nav__link">Экстрим</a></li>
+								<li class="nav__item "><a href="#" class="nav__link">Атмосфера</a></li>
+								<li class="nav__item "><a href="#" class="nav__link">Люди</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="country">
+						<div class="container">
+							<ul class="country__list">
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item">
+													<div style="background-image: url(./img/country/cuba.jpg);" class="img-country__img img-cover"><img src="./img/country/cuba.jpg" class="img-country__img-pic img-fake">
+														<div class="img-country__img-title">Cuba</div>
+													</div>
+												</li>
+												<li class="img-country__item">
+													<div class="img-country__desc">
+														<div class="img-country__desc-text">
+															<p>Хэмингуэй, став весьма знаменитым, естесвенно, мог выбрать любое место в мире. Почему же он 22 года прожил в Гаване? Потому что это свобода!</p>
+														</div>
+														<div class="img-country__desc-title">Cuba</div>
+													</div>
+												</li>
+												<li class="img-country__item">
+													<div style="background-image: url(./img/country/slide-3.jpg);" class="img-country__img img-cover"><img src="./img/country/slide-3.jpg" class="img-country__img">
+														<div class="img-country__desc-title">Cuba</div>
+													</div>
+												</li>
+												<li class="img-country__item">
+													<div style="background-image: url(./img/country/slide-4.jpg);" class="img-country__img img-cover"><img src="./img/country/slide-4.jpg" class="img-country__img">
+														<div class="img-country__desc-title">Cuba</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/russia.jpg" class="img-country__img">
+													<div class="img-country__img-title">Russia</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/England.jpg" class="img-country__img">
+													<div class="img-country__img-title">England</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/Norway.jpg" class="img-country__img">
+													<div class="img-country__img-title">Norway</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/Switzerland.jpg" class="img-country__img">
+													<div class="img-country__img-title">Switzerland</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/China.jpg" class="img-country__img">
+													<div class="img-country__img-title">China</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/Germany.jpg" class="img-country__img">
+													<div class="img-country__img-title">Germany</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/Japan.jpg" class="img-country__img">
+													<div class="img-country__img-title">Japan</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/Australia.jpg" class="img-country__img">
+													<div class="img-country__img-title">Australia</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/India.jpg" class="img-country__img">
+													<div class="img-country__img-title">India</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/Finland.jpg" class="img-country__img">
+													<div class="img-country__img-title">Finland</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="country__item">
+									<div class="country__block">
+										<div class="country__img img-country">
+											<ul class="img-country__list">
+												<li class="img-country__item"><img src="./img/country/New-Zealand.jpg" class="img-country__img">
+													<div class="img-country__img-title">New Zealand</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</main>
 			</div>
 		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__left">
+					<div class="footer__copyright">© 2013 - 2015</div>
+				</div>
+				<div class="footer__right">
+					<div class="footer__content">Здесь наследили <span>соискатели:)</span></div>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay"></div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>
 			window.jQuery || document.write('<script src="/js/_vendors/jquery-1.11.3.min.js"><\/script>');
 			
 		</script>
-		<script src="js/plugins.min.js"></script>
+		<script src="js/_vendors/jquery-1.11.3.min.js"></script>
+		<script src="js/_vendors/slick.min.js"></script>
 		<script src="js/main.min.js"></script>
 	</body>
 </html>

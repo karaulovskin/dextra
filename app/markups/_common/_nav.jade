@@ -1,7 +1,7 @@
 nav.nav
 	.container
-		- var items = ["Планшеты", "Мобильные телефоны", "Мр3 плееры", "Персональные компьютеры", "Аксессуары", "Бытовая техника"]
+		- var items = ["Все страны", "Культура", "Экстрим", "Атмосфера", "Люди"]
 		ul.nav__list
 			each item in items
-				li(class="nav__item nav__item_" +  ((item == "Мобильные телефоны") ? 'active' : ''))
+				li(class="nav__item " +  ((item == "Все страны") ? 'active' : ''))
 					a(href="#").nav__link= item

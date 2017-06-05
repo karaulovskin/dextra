@@ -1,0 +1,26 @@
+.slick-arrow {
+	position: absolute;
+	bottom: 20px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	border: none;
+	z-index: 1;
+	opacity: 0.15;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+
+.slick-prev {
+	right: 57px;
+	background: url(../img/svg/prev_slide.svg)no-repeat;
+}
+
+.slick-next {
+	right: 20px;
+	background: url(../img/svg/next_slide.svg)no-repeat;
+}

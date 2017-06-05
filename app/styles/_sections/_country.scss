@@ -1,0 +1,71 @@
+
+
+.country__list {
+	margin: 0 -10px;
+	font-size: 0;
+}
+
+
+.country__item {
+	@include inline-block(top);
+	width: 25%;
+	height: 200px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+.country__block {
+	background: #313336;
+}
+
+.country__item--big {
+	width: 50%;
+	height: 420px;
+}
+
+.img-country__item {
+	// position: relative;
+}
+
+.img-country__img {
+	position: relative;
+	height: 200px;
+}
+
+.img-country__img-pic {
+	max-width: 100%;
+}
+
+.img-country__img-title {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	@include transform(translateY(-50%));
+	text-align: center;
+	font-size: 36px;
+	font-family: 'newbaskervillecregular';
+}
+
+.img-country__desc {
+	width: 100%;
+	height: 100%;
+	padding: 35px 20px 0;
+	font-size: 14px;
+	color: #abaeb3;
+}
+
+.img-country__desc-text {
+	p {
+		margin-bottom: 32px;
+		line-height: 1.6;
+	}
+}
+
+.img-country__desc-title {
+	font-size: 24px;
+	font-family: 'newbaskervillecregular';
+}
+
+

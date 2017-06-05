@@ -1,0 +1,31 @@
+.footer {
+	width: 100%;
+    padding-top: 22px;
+	color: $grey;
+	background: #282a2d;
+	border-top: 1px solid #c7cacf;
+}
+
+.footer__left {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+.footer__right {
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+.footer__copyright {
+	font-family: 'newbaskervillecregular';
+}
+
+.footer__content {
+	font-size: 14px;
+
+	span {
+		color: #b5b9be;
+	}
+}
