@@ -1,0 +1,101 @@
+.popup-img {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	@include transform(translateY(-50%));
+	width: 640px;
+	height: 480px;
+	margin: auto;
+	z-index: 100;
+
+	&.open {
+		display: block;
+	}
+
+	@include tablets {
+	    width: 375px;
+    	height: 240px;
+	}
+
+	@include phones {
+		width: 300px;
+		height: 200px;
+	}
+}
+
+.popup-video {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	@include transform(translateY(-50%));
+	width: 740px;
+	height: 480px;
+	margin: auto;
+	z-index: 100;
+
+	&.open {
+		display: block;
+	}
+
+	@include tablets {
+	    width: 375px;
+    	height: 240px;
+	}
+
+	@include phones {
+		width: 300px;
+		height: 200px;
+	}
+}
+
+.popup__close {
+	position: absolute;
+	top: -34px;
+	right: -34px;
+	width: 28px;
+	height: 28px;
+	z-index: 100;
+
+	@include phones {
+		top: -10px;
+		right: -10px;
+	}
+}
+
+.popup__close-link {
+	display: block;
+	width: 28px;
+	height: 28px;
+	font-size: 0;
+	background: url(../img/svg/icon_close.svg)no-repeat;
+}
+
+.popup-img__block {
+	width: 100%;
+	height: 100%;
+}
+
+.popup-img__block {
+	max-width: 100%;
+}
+
+.popup-video__video {
+	width: 740px;
+	height: 480px;
+
+	@include tablets {
+	    width: 375px;
+    	height: 240px;
+	}
+}
+
+.popup-video__iframe {
+	@include tablets {
+	    width: 375px;
+    	height: 240px;
+	}
+}

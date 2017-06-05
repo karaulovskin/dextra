@@ -12,15 +12,32 @@
 	&:hover {
 		opacity: 1;
 	}
+
+	@include top {
+		bottom: 14px;
+	}
+
+	@include phones {
+		bottom: 10px;
+	}
 }
 
 
 .slick-prev {
 	right: 57px;
 	background: url(../img/svg/prev_slide.svg)no-repeat;
+
+	@include phones {
+		right: auto;
+		left: 12px;
+	}
 }
 
 .slick-next {
 	right: 20px;
 	background: url(../img/svg/next_slide.svg)no-repeat;
+
+	@include phones {
+		right: 12px;
+	}
 }

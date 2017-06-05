@@ -3,25 +3,124 @@
 .country__list {
 	margin: 0 -10px;
 	font-size: 0;
+
+	@include phones {
+		margin: 0 -7px;
+	}
 }
 
 
 .country__item {
-	@include inline-block(top);
+	float: right;
 	width: 25%;
-	height: 200px;
+	// height: 200px;
+	height: 14.6vw;
 	margin-bottom: 20px;
 	padding: 0 10px;
 	font-size: 16px;
+	overflow: hidden;
+
+	@include laptop {
+		width: 50%;
+		height: 30vw;
+	}
+
+	@include phones {
+		margin-bottom: 14px;
+		padding: 0 7px;
+	}
+}
+
+.country__item--big {
+	width: 50%;
+	// height: 420px;
+	height: 30.6vw;
+
+	.img-cover {
+		background-position: 50% 30%;
+	}
+
+	.img-country__img-title {
+		top: 24%;
+		left: 5%;
+		right: auto;
+		font-size: 40px;
+	}
+
+	@include top {
+		.img-country__img-title {
+			font-size: 32px;
+		}
+	}
+
+	@include laptop {
+		width: 100%;
+		height: 60vw;
+
+		.img-country__img-title {
+			font-size: 40px;
+		}
+	}
+
+	@include tablets {
+
+		.img-country__img-title {
+			font-size: 30px;
+		}
+	}
+
+	@include phones {
+
+		.img-country__img-title {
+		    margin-bottom: 6px;
+    		font-size: 14px;
+		}
+	}
+}
+
+.country__img-list {
+	position: absolute;
+	top: 38%;
+	left: 7%;
+}
+
+.country__img-item {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: 'newbaskervillecregular';
+
+	@include top {
+		margin-bottom: 14px;
+		font-size: 18px;
+	}
+
+	@include laptop {
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+
+	@include tablets {
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+
+	@include phones {
+		margin-bottom: 4px;
+		font-size: 14px;
+	}
 }
 
 .country__block {
 	background: #313336;
 }
 
-.country__item--big {
-	width: 50%;
-	height: 420px;
+.country__img--big {
+	// height: 420px;
+	height: 30.6vw;
+
+	@include laptop {
+		height: 60vw;
+	}
 }
 
 .img-country__item {
@@ -30,7 +129,22 @@
 
 .img-country__img {
 	position: relative;
-	height: 200px;
+	// height: 200px;
+	height: 14.6vw;
+
+	@include laptop {
+		height: 30vw;
+	}
+}
+
+.img-country__bg-first {
+	height: 100%;
+	background: rgba(3, 21, 36, .6);
+}
+
+.img-country__bg-second {
+	height: 100%;
+	background: rgba(7, 26, 42, .2);
 }
 
 .img-country__img-pic {
@@ -46,26 +160,113 @@
 	text-align: center;
 	font-size: 36px;
 	font-family: 'newbaskervillecregular';
+
+	@include top {
+		font-size: 30px;
+	}
+
+	@include laptop {
+		font-size: 36px;
+	}
+
+	@include tablets {
+		font-size: 28px;
+	}
+
+	@include phones {
+		font-size: 16px;
+	}
 }
 
 .img-country__desc {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	padding: 35px 20px 0;
 	font-size: 14px;
 	color: #abaeb3;
+
+	@include top {
+		padding: 12px 10px 0;
+
+		.img-country__desc-title {
+			display: none;
+		}
+	}
+
+	@include phones {
+		font-size: 11px;
+	}
 }
 
 .img-country__desc-text {
 	p {
 		margin-bottom: 32px;
-		line-height: 1.6;
+	}
+
+	@include phones {
+		margin-bottom: 0;
 	}
 }
 
 .img-country__desc-title {
 	font-size: 24px;
 	font-family: 'newbaskervillecregular';
+
+	&.position {
+		position: absolute;
+    	bottom: 15px;
+    	left: 20px;
+	}
+
+	@include tablets {
+		font-size: 20px;
+	}
+
+	@include phones {
+		bottom: 6px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
+.img-country__img-popup {
+	position: relative;
+	// height: 200px;
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		@include transform(translateY(-50%));
+		width: 42px;
+		height: 42px;
+		margin: auto;
+		background: url(../img/svg/icon_zoom.svg)no-repeat;
+	}
+}
+
+.img-country__video-popup {
+	position: relative;
+	height: 200px;
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		@include transform(translateY(-50%));
+		width: 42px;
+		height: 42px;
+		margin: auto;
+		background: url(../img/svg/icon_play.svg)no-repeat;
+	}
 }
 
 

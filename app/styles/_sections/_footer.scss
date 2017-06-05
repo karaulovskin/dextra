@@ -4,6 +4,10 @@
 	color: $grey;
 	background: #282a2d;
 	border-top: 1px solid #c7cacf;
+
+	@include phones {
+		padding: 12px;
+	}
 }
 
 .footer__left {
